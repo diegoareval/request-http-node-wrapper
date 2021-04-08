@@ -1,7 +1,7 @@
 {
-  "name": "onesignal-node",
+  "name": "wrapper",
   "version": "3.2.1",
-  "description": "A Node.js Library for OneSignal push notification service",
+  "description": "Library to connect to the server using http",
   "engines": {
     "node": ">=8.13.0"
   },
@@ -15,22 +15,18 @@
   ],
   "scripts": {
     "lint": "./node_modules/.bin/eslint src test --ext .js,.ts",
-    "build": "./node_modules/.bin/tsc",
-    "test": "./node_modules/.bin/mocha -r ts-node/register 'test/unit/**/*.spec.ts'",
-    "test-integration": "./node_modules/.bin/mocha -r ts-node/register 'test/integration/**/*.spec.ts'",
-    "coverage": "./node_modules/.bin/nyc --reporter=lcov npm run test",
-    "update-codecov": "./node_modules/.bin/codecov"
+    "build": "./node_modules/.bin/tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zeyneloz/onesignal-node.git"
+    "url": "https://github.com/diegoareval/request-http-node-wrapper.git"
   },
   "keywords": [
     "wrapper",
     "request",
-    "notification"
+    "connect server"
   ],
-  "author": "Zeynel <diego2000avelar@gmail.com>",
+  "author": "Diego <diego2000avelar@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.2.11",
